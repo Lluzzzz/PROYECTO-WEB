@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <h1><a href="index.html">HOME</a></h1>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="iniciar.html">Inicia sesión</a></li>
+                    <li><a class="nav-link scrollto active" href="inner-page.html">Regístrate</a></li>
+                    <li><a class="nav-link scrollto" href="#about">Sobre Paul Bocuse</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Conoce más</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Recetas destacadas</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Eventos</a></li>
+                    <li><a class="nav-link scrollto" href="#pricing">Multimedia</a></li>
+                    <li class="dropdown"><a href="#"><span>Calculadoras</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Calculadoras</a></li>
+                            <li class="dropdown"><a href="#"><span>Conversoras</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Conversor de temperatura</a></li>
+                                    <li><a href="#">Conversor de peso</a></li>
+                                    <li><a href="#">Conversoras de tamaño</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cronómetro virtual</a></li>
+                            <li><a href="#">tiempo de cocción</a></li>
+                            <li><a href="#">Tiempo de maceración</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contactanos</a></li>
+                </ul>
+
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>REGISTRO</li>
+                </ol>
+                <h2>Sé parte de nuestra comunidad</h2>
+                <p>Registrate para acceder a toda la experiencia: Recetas exclusivas, Noticias, novedades, eventos y más.</p>
+            </div>
+        </section>
+    
+        <section class="inner-page">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h3>CREA UN USUARIO</h3>
+                    </div>
+                </div>
+    
+                <div class="row footer-newsletter justify-content-center">
+                    <div class="col-lg-6">
+                        <form id="registro-form" class="row g-3">
+                            <div class="mb-4">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="fecha" class="form-label">Fecha de nacimiento:</label>
+                                <input type="date" class="form-control" id="fecha" name="fecha" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-4">REGISTRARSE</button>
+                            <br>
+                            <p id="res">Su usuario es:</p>
+                            <p id="contrasena"></p> <!-- Aquí se mostrará la contraseña -->
+                        </form>
+                        <button type="button" onclick="registrarse()" class="btn my-3">
+                            <a href="iniciar.html" class="text-decoration-none text-dark">INICIAR SESIÓN</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main><!-- End #main -->
+    
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://twitter.com/?lang=es" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.skype.com/es/" class="google-plus"><i class="bi bi-skype"></i></a>
+                    <a href="https://bo.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Derechos de autor <strong><span>Bocuse´s</span></strong>. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="assets/js/main.js"></script>
+  <script src="assets/js/registro.js"></script>
+
+   </body>
+</html>
